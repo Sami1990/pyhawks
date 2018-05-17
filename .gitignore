@@ -1,0 +1,7 @@
+*.pyc
+*/static/*
+*/media/*
+.idea/*
+.env
+error_log*
+.DS_Store

@@ -1,0 +1,615 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% trans 'pyhawks.com - Experts in full-stack Django Development, DevOps, Mobile Applications and User Experience in Munich.' %}</title>
+        <!-- Plugins CSS -->
+        <link href="{% static 'css/plugins/plugins.css' %}" rel="stylesheet">
+        <!--dz parallaxer-->
+        <link href="{% static 'dzsparallaxer/dzsparallaxer.css' %}" rel="stylesheet">
+        <link href="{% static 'dzsparallaxer/scroller.css' %}" rel="stylesheet">
+        <link href="{% static 'dzsparallaxer/advancedscroller/plugin.css' %}" rel="stylesheet">
+
+        <link href="{% static 'smart-form/contact-recaptcha/css/smart-forms.css' %}" rel="stylesheet">
+        <!-- load css for cubeportfolio -->
+        <link rel="stylesheet" type="text/css" href="{% static 'cubeportfolio/css/cubeportfolio.min.css' %}">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target="#navbarsspy" data-offset="57">
+        <div id="preloader">
+            <div id="preloader-inner"></div>
+        </div><!--/preloader-->
+
+
+        <section id="home" class="bg-parallax fullscreen parallax-overlay" data-jarallax-video="https://www.youtube.com/watch?v=pSj7lK17VXA" data-jarallax-orignal-styles="null">
+            <div class="content-table">
+                <div class="content-middle pt80 ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 ml-auto mr-auto text-center">
+                                <h2 class="hero-big-text text-white">Pyhawks</h2>
+                                <h3 class="lead text-white-gray">
+                                    {% trans 'We are experts in full-stack Django Development, DevOps, Mobile Applications and User Experience.' %}
+                                </h3>
+                                <div class="circle-button">
+                                    <a href="#about" data-scroll class="btn btn-white-outline btn-lg btn-rounded">{% trans 'Learn More' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--hero inner-->
+            </div><!--parallax hero-->
+            <div class="mouse-down"><a data-scroll href="#about"><i class="fa fa-angle-down fa-3x"></i></a></div>
+        </section>
+        <!--intro section end-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-nav">
+            <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsspy" aria-controls="navbarsspy" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" data-scroll href="#home">
+                <b>PYHAWKS</b>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarsspy">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a data-scroll class="nav-link active" href="#home">{% trans 'Home' %}</a></li>
+                    <li class="nav-item"><a data-scroll class="nav-link" href="#about">{% trans 'About' %}</a></li>
+                    <li class="nav-item"><a data-scroll class="nav-link" href="#services">{% trans 'Services' %}</a></li>
+                    <li class="nav-item"><a data-scroll class="nav-link" href="#portfolio">{% trans 'Portfolio' %}</a></li>
+                    <li class="nav-item"><a data-scroll class="nav-link" href="#team">{% trans 'Team' %}</a></li>
+                    <li style="display:none;" class="nav-item"><a data-scroll class="nav-link" href="#testimonials">{% trans 'Testimonials' %}</a></li>
+                    <li class="nav-item"><a data-scroll class="nav-link" href="#contact">{% trans 'Contact' %}</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <section id="about" class="pt90 pb50">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb40">
+                        <div class="section-title title-left mb40 text-left">
+                            <span class="section-subTitle">
+                                {% trans 'Who we are' %}
+                            </span>
+                            <h4 class='mb0 h3 font300 mb20'>
+                                {% trans "We're a creative digital agency based in Munich, Germany. We deliver awesome web products to the world" %}
+                            </h4>
+                            <p class="lead">
+                                {% trans 'We work on projects as if they were our own.' %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb40">
+                        <div class="row text-center">
+                            <div class="col-md-6 mb40">
+                                <input type="text" class="progress-circle" data-width="70%" data-thickness=".1" data-bgColor="#f5f5f5" value="93" data-skin="tron" data-fgColor="#333" data-readOnly="true" title="">
+                                <h4 class="text-uppercase pt30">{% trans 'Creative Skills' %}</h4>
+                            </div>
+                            <div class="col-md-6 mb40">
+                                <input type="text" class="progress-circle" data-width="70%" data-thickness=".1" data-bgColor="#f5f5f5" value="95" data-skin="tron" data-fgColor="#333" data-readOnly="true" title="">
+                                <h4 class="text-uppercase pt30">{% trans 'Hard Work' %}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4 mb40'>
+                        <img src='{% static 'images/con1.jpg' %}' alt='' class='img-fluid center-img shadow-card mb30'>
+                        <h5 class='text-uppercase'>{% trans 'Creative Heads' %}</h5>
+                        <p>
+                            {% blocktrans %}
+                                We always think one step ahead. With every project we do,
+                                we grow in different directions. We are avid readers and follow the latest scientific
+                                researches in fields Computer Science, Physics and Astronomy.
+                                Only hard challenges can cheer us up.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                    <div class='col-md-4 mb40'>
+                        <img src='{% static 'images/con2.jpg' %}' alt='' class='img-fluid center-img shadow-card mb30'>
+                        <h5 class='text-uppercase'>{% trans 'Broad knowledge' %}</h5>
+                        <p>
+                            {% blocktrans %}
+                                Our spectrum of knowledge covers broad fields.
+                                Besides being experts in software
+                                Development, we are strongly engaged in AI, Bioinformatics and modern science.
+                                We can talk about almost everything - with us, it will never be boring!
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                    <div class='col-md-4 mb40'>
+                        <img src='{% static 'images/con3.jpg' %}' alt='' class='img-fluid center-img shadow-card mb30'>
+                        <h5 class='text-uppercase'>{% trans 'Modern frameworks & Technologies' %}</h5>
+                        <p>
+                            {% blocktrans %}
+                                Just as quick blurb about our stack:
+                                We mostly work with Python Django in Backend and Angular in Frontend. If it is mobile apps,
+                                we take either libraries for hybrid apps or native app languages like objective-C, Swift or Java..
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section><!--section end about-->
+
+        <div class='pt50 pb40 bg-primary'>
+            <div class='container'>
+                <div class='row align-items-center'>
+                    <div class='col-md-8'>
+                        <h3 class='text-white '>"{% trans 'Websites promote you 24/7: No employee will do that.' %}"</h3>
+                        <p class='lead text-white-gray'>― Paul Cookson</p>
+                    </div>
+                    <div class='col-md-4 text-center'>
+                        <a data-scroll href='#contact' class='hover-me1'>{% trans 'Drop us a line' %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id='services' class='pt90 pb60'>
+            <div class='container'>
+                <div class='row align-items-center'>
+                    <div class='col-md-4 mb30'>
+                        <div class='section-title title-left mb30'>
+                            <span class="section-subTitle">{% trans 'what we do' %}</span>
+                            <h3 class='mb0'>
+                                {% trans 'Our services' %}
+                            </h3>
+                        </div>
+                        <p class='lead'>
+                            {% trans 'We provide the best customer service to our customers' %}
+                        </p>
+                        <a data-scroll href='#portfolio' class='btn btn-outline-secondary'>{% trans 'Learn More' %}</a>
+                    </div>
+                    <div class='col-md-7 offset-md-1'>
+                        <div class='row'>
+                            <div class='col-md-6 mb30 text-center'>
+                                <i class='icon-book-open fa-3x mb20 text-primary'></i>
+                                <h5 class='text-uppercase mb20'>{% trans 'Consulting' %}</h5>
+                                <p>
+                                    {% blocktrans %}owiejfowiejfwf{% endblocktrans %}
+                                </p>
+                            </div>
+                            <div class='col-md-6 mb30 text-center'>
+                                <i class='icon-toolbox fa-3x mb20 text-primary'></i>
+                                <h5 class='text-uppercase mb20'>{% trans 'Mobile Apps' %}</h5>
+                                <p>
+                                    {% blocktrans %}owiejfowiejfwf{% endblocktrans %}
+                                </p>
+                            </div>
+                            <div class='col-md-6 mb30 text-center'>
+                                <i class='icon-search fa-3x mb20 text-primary'></i>
+                                <h5 class='text-uppercase mb20'>{% trans 'Fast MVP' %}</h5>
+                                <p>
+                                    {% blocktrans %}owiejfowiejfwf{% endblocktrans %}
+                                </p>
+                            </div>
+                            <div class='col-md-6 mb30 text-center'>
+                                <i class='icon-lightbulb fa-3x mb20 text-primary'></i>
+                                <h5 class='text-uppercase mb20'>{% trans 'Full-stack Development' %}</h5>
+                                <p>
+                                    {% blocktrans %}owiejfowiejfwf{% endblocktrans %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/.services-->
+
+        <div class="cta bg-dark pt90 angle-top mt70 pb60" style="display: none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 wow fadeInLeft mb30" data-wow-delay=".1s">
+                        <img src="{% static 'images/mac1.png' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 pb40">
+                        <h2 class="text-white font300 mb20">The most clean & elegant template on the market</h2>
+                        <p class="lead  text-white-gray">
+                            " I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. "
+                        </p>
+                        <h5 class="text-capitalize font500 text-white text-right"> Carlos Doe <small class="text-white-gray">Assan customer</small></h5>
+                    </div>
+                </div>
+            </div>
+        </div><!--/cta-->
+
+        <section id="portfolio" class="pt90 pb90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto text-center mb30">
+                        <div class="section-title">
+                            <span class="section-subTitle">{% trans 'we love what we do' %}</span>
+                            <h3 class="mb0">{% trans 'Our portfolio' %}</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="js-filters-agency" class="cbp-l-filters-text">
+                    <div class="cbp-l-filters-text-sort">{% trans 'Filter by:' %}</div>
+                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                        {% trans 'All' %} <div class="cbp-filter-counter"></div>
+                    </div> |
+                    <div data-filter=".app" class="cbp-filter-item">
+                        {% trans 'Mobile Apps' %} <div class="cbp-filter-counter"></div>
+                    </div> |
+                    <div data-filter=".backend" class="cbp-filter-item">
+                        {% trans 'Backend Development' %} <div class="cbp-filter-counter"></div>
+                    </div> |
+                    <div data-filter=".fullstack" class="cbp-filter-item">
+                        {% trans 'Fullstack' %} <div class="cbp-filter-counter"></div>
+                    </div>
+                </div>
+
+                <div id="js-grid-agency" class="cbp cbp-l-grid-agency">
+                    <div class="cbp-item app">
+                        <a href="https://itunes.apple.com/us/app/vrr-nextticket/id1265775667" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/netxticket.png' %}" data-cbp-src="{% static 'images/netxticket.png' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">Hybrid App</div>
+                            <div class="cbp-l-grid-agency-desc">Hybrid Phonegap / Ionic / Cordova</div>
+                        </a>
+                    </div>
+                    <div class="cbp-item web-design logos">
+                        <a href="https://wrapbootstrap.com/theme/assan-multipurpose-15-themes-admin-WB05F069P" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/img2.jpg' %}" data-cbp-src="{% static 'images/img2.jpg' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">World Clock</div>
+                            <div class="cbp-l-grid-agency-desc">Logo / Web Design</div>
+                        </a>
+                    </div>
+                    <div class="cbp-item graphic logos">
+                        <a href="https://wrapbootstrap.com/theme/assan-multipurpose-15-themes-admin-WB05F069P" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/img3.jpg' %}" data-cbp-src="{% static 'images/img3.jpg' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">To-Do Dashboard</div>
+                            <div class="cbp-l-grid-agency-desc">Graphic / Logo</div>
+                        </a>
+                    </div>
+                    <div class="cbp-item web-design graphic">
+                        <a href="https://wrapbootstrap.com/theme/assan-multipurpose-15-themes-admin-WB05F069P" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/img4.jpg' %}" data-cbp-src="{% static 'images/img4.jpg' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">Events and More</div>
+                            <div class="cbp-l-grid-agency-desc">Web Design / Graphic</div>
+                        </a>
+                    </div>
+                    <div class="cbp-item identity web-design">
+                        <a href="https://wrapbootstrap.com/theme/assan-multipurpose-15-themes-admin-WB05F069P" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/img5.jpg' %}" data-cbp-src="{% static 'images/img5.jpg' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">WhereTO App</div>
+                            <div class="cbp-l-grid-agency-desc">Web Design / Identity</div>
+                        </a>
+                    </div>
+                    <div class="cbp-item identity web-design">
+                        <a href="https://wrapbootstrap.com/theme/assan-multipurpose-15-themes-admin-WB05F069P" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/img6.jpg' %}" data-cbp-src="{% static 'images/img6.jpg' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">Ski * Buddy</div>
+                            <div class="cbp-l-grid-agency-desc">Identity / Web Design</div>
+                        </a>
+                    </div>
+                    <div class="cbp-item graphic logos">
+                        <a href="https://wrapbootstrap.com/theme/assan-multipurpose-15-themes-admin-WB05F069P" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/img7.jpg' %}" data-cbp-src="{% static 'images/img7.jpg' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">Seemple* Music</div>
+                            <div class="cbp-l-grid-agency-desc">Graphic / Logo</div>
+                        </a>
+                    </div>
+                    <div class="cbp-item identity graphic">
+                        <a href="https://wrapbootstrap.com/theme/assan-multipurpose-15-themes-admin-WB05F069P" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/img8.jpg' %}" data-cbp-src="{% static 'images/img8.jpg' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">Remind~Me More</div>
+                            <div class="cbp-l-grid-agency-desc">Identity / Graphic</div>
+                        </a>
+                    </div>
+                    <div class="cbp-item web-design graphic">
+                        <a href="https://wrapbootstrap.com/theme/assan-multipurpose-15-themes-admin-WB05F069P" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/img9.jpg' %}" data-cbp-src="{% static 'images/img9.jpg' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">Workout Buddy</div>
+                            <div class="cbp-l-grid-agency-desc">Web Design / Graphic</div>
+                        </a>
+                    </div>
+                    <div class="cbp-item identity web-design">
+                        <a href="https://wrapbootstrap.com/theme/assan-multipurpose-15-themes-admin-WB05F069P" target="_blank">
+                            <div class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="{% static 'images/img10.jpg' %}" data-cbp-src="{% static 'images/img10.jpg' %}" alt="" width="380" height="250">
+                                </div>
+                            </div>
+                            <div class="cbp-l-grid-agency-title">Bills Bills Bills</div>
+                            <div class="cbp-l-grid-agency-desc">Identity / Web Design</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section><!--/.portfolio-->
+
+        <div class="dzsparallaxer auto-init height-is-based-on-content "  data-options='{direction: "reverse"}'>
+            <div class="divimage dzsparallaxer--target " style="width: 101%; height: 130%; background-image: url({% static 'images/bg3.jpg' %})">
+            </div>
+
+            <div class="container pt100 pb70">
+                <div class="row pb50">
+                    <div class="col-md-8 ml-auto mr-auto wow bounceIn" data-wow-delay=".2s">
+                        <h3 class="h1 text-center font300 text-white">"{% trans 'pyhawks are really agile and can adapt to new projects in seconds. They deliver better products than you expect!' %}"</h3>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a data-scroll="" href="#contact" class="hover-me1">{% trans 'Drop us a line' %}</a>
+                </div>
+            </div>
+            <div class="dzsprxseparator--2triangles"></div>
+        </div><!--parallax-->
+
+        <section id="team" class="pt90 pb60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto text-center mb30">
+                        <div class="section-title">
+                            <span class="section-subTitle">{% trans 'Our real heros' %}</span>
+                            <h3 class="mb0">{% trans 'Our team' %}</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-margin">
+                    <div class="col-lg-3 col-md-6 mb30">
+                        <div class="team-card">
+                            <img src="{% static 'images/doni.png' %}" alt="" class="img-fluid">
+                            <div class="team-overlay align-items-center">
+                                <div class="team-detail">
+                                    <h4>Doniyor Jurabayev</h4>
+                                    <span>Founder, Lead Backend Development & DevOps</span>
+                                    <div class="seprator-overlay"></div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                    <div class="col-lg-3 col-md-6 mb30">
+                        <div class="team-card">
+                            <img src="{% static 'images/sami2.jpg' %}" alt="" class="img-fluid">
+                            <div class="team-overlay align-items-center">
+                                <div class="team-detail">
+                                    <h4>Sami Mkhazni</h4>
+                                    <span>Founder, Lead Mobile & Frontend Development</span>
+                                    <div class="seprator-overlay"></div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/col-->
+                </div>
+            </div>
+
+        </section><!--team-->
+
+        <section id="testimonials" class="bg-faded pt90 pb60" style="display: none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 mb30">
+                        <div class="section-title title-left mb30">
+                            <span class="section-subTitle">{% trans 'What our customers say' %}</span>
+                            <h3 class="mb0">
+                                {% trans 'Testimonials' %}
+                            </h3>
+                        </div>
+
+                    </div>
+                    <div class="col-md-7 offset-md-1">
+                        <div class="text-center">
+                            <i class="fa fa-quote-left text-muted text-center fa-4x"></i>
+                        </div>
+                        <div class="cbp-l-slider-testimonials-wrap">
+                            <div style=" margin: 0 auto;">
+                                <div id="js-grid-slider-testimonials" class="cbp cbp-slider-edge">
+                                    <div class="cbp-item graphic">
+                                        <div class="cbp-l-grid-slider-testimonials-body">
+                                            “ I have create my site easily using assan bootstrap3 pack, very easy to customize and unlimited features, recommended! ”
+                                        </div>
+                                        <div class="cbp-l-grid-slider-testimonials-footer">
+                                            John Snow, Assan customer
+                                        </div>
+                                    </div>
+                                    <div class="cbp-item web-design logos">
+                                        <div class="cbp-l-grid-slider-testimonials-body">
+                                            “ Great support mate, I have a question related pricing tables and this guy solve my issue with fast response, I have recommended assan for your next project. ”
+                                        </div>
+                                        <div class="cbp-l-grid-slider-testimonials-footer">
+                                            Arya Stark, Assan customer
+                                        </div>
+                                    </div>
+                                    <div class="cbp-item graphic logos">
+                                        <div class="cbp-l-grid-slider-testimonials-body">
+                                            “ Such a great template. Great features and design. Keep it up! ”
+                                        </div>
+                                        <div class="cbp-l-grid-slider-testimonials-footer">
+                                            Tyrion Lannister, Assan customer
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="pt90 pb50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 pb40">
+                        <div class="section-title title-left mb30">
+                            <span class="section-subTitle">{% trans 'Feel free to contact us' %}</span>
+                            <h3 class="mb0">
+                                {% trans 'Contact us' %}
+                            </h3>
+                        </div>
+                        <ul class="list-unstyled contact-info">
+                            <li>
+                                <i class="fa fa-home"></i>
+                                {% trans 'Boschetsrieder Straße 43, 81379 München' %}<br> {% trans 'Germany' %}<br>
+                                <a target="_blank" href="https://www.google.de/maps/place/Boschetsrieder+Str.+43,+81379+M%C3%BCnchen/">{% trans 'View On Map' %}</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <a href="#">+49 176 2362 8781</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <a href="#">info@pyhawks.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 offset-md-1 pb40">
+                        <h3 class="font300 mb30">{% trans 'Feel free to contact us!' %}</h3>
+                        <div class="smart-wrap">
+                            <div class="smart-forms smart-container wrap-2">
+
+                                <form method="post" action="#contact_now" id="smart-form">
+                                    <div class="form-body">
+                                        <div class="section">
+                                            <label class="field prepend-icon">
+                                                <input type="text" name="sendername" id="sendername" class="gui-input" placeholder="{% trans 'Enter name' %}">
+                                                <span class="field-icon"><i class="fa fa-user"></i></span>
+                                            </label>
+                                        </div><!-- end section -->
+                                        <div class="section">
+                                            <label class="field prepend-icon">
+                                                <input type="email" name="emailaddress" id="emailaddress" class="gui-input" placeholder="{% trans 'Email address' %}">
+                                                <span class="field-icon"><i class="fa fa-envelope"></i></span>
+                                            </label>
+                                        </div><!-- end section -->
+                                        <div class="section">
+                                            <label class="field prepend-icon">
+                                                <input type="text" name="sendersubject" id="sendersubject" class="gui-input" placeholder="{% trans 'Enter subject' %}">
+                                                <span class="field-icon"><i class="fa fa-lightbulb-o"></i></span>
+                                            </label>
+                                        </div><!-- end section -->
+                                        <div class="section">
+                                            <label class="field prepend-icon">
+                                                <textarea class="gui-textarea" id="sendermessage" name="sendermessage" placeholder="Enter message"></textarea>
+                                                <span class="field-icon"><i class="fa fa-comments"></i></span>
+                                                <span class="input-hint"> <strong>Hint:</strong> {% trans 'Please enter between 80 - 300 characters.' %}</span>
+                                            </label>
+                                        </div><!-- end section -->
+                                        <div class="result"></div><!-- end .result  section -->
+                                    </div><!-- end .form-body section -->
+                                    <div class="form-footer">
+                                        <button type="submit" data-btntext-sending="Sending..." class="button btn btn-primary">{% trans 'Submit' %}</button>
+                                        <button type="reset" class="button btn-secondary"> {% trans 'Cancel' %} </button>
+                                    </div><!-- end .form-footer section -->
+                                </form>
+                            </div><!-- end .smart-forms section -->
+                        </div><!-- end .smart-wrap section -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="dzsparallaxer auto-init height-is-based-on-content "  data-options='{   direction: "reverse"}'>
+            <div class="divimage dzsparallaxer--target " style="width: 101%; height: 130%; background-image: url({% static 'images/bg2.jpg' %})">
+            </div>
+            <div class="semi-black-overlay"></div>
+            <div class="container pt100 pb70">
+                <div class="row pb50">
+                    <div class="col-md-8">
+                        <h3 class="h1 text-center font300 text-white">Let's work together</h3>
+                    </div>
+                    <div class="col-md-4 text-sm-center mt10">
+                        <a data-scroll="" href="#contact" class="hover-me1">Hire Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dzsprxseparator--2triangles"></div>
+        </div><!--parallax-->
+
+        <footer class='footer'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <div class='clearfix socials'>
+                            <a href="#" class="social-icon si-border si-twitter">
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon si-border si-linkedin">
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class='col-md-6 text-md-right text-center'>
+                        <span>&copy; Copyright 2018. pyhawks.com</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--back to top-->
+        <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script type="text/javascript" src="{% static 'js/plugins/plugins.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/onepage.custom.js' %}"></script>
+
+        <!-- load cubeportfolio -->
+        <script type="text/javascript" src="{% static 'cubeportfolio/js/jquery.cubeportfolio.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/folio-load-more.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/testimonials.js' %}"></script>
+        <!--sky form plugin js-->
+        <script type="text/javascript" src="{% static 'smart-form/contact-recaptcha/js/jquery.form.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'smart-form/contact-recaptcha/js/jquery.validate.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'smart-form/contact-recaptcha/js/additional-methods.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'smart-form/contact-recaptcha/js/smart-form.js' %}"></script>
+    </body>
+</html>
